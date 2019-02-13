@@ -71,4 +71,15 @@ a {
     .shortcut-menu div:hover i {
       color: white; }
 
+.sheet {
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(27, 1fr); }
+
+.text-input {
+  width: 120px;
+  font-size: 18px;
+  display: inline-block;
+  border: 0.5px solid #999; }
+
 /*# sourceMappingURL=main.css.map */
