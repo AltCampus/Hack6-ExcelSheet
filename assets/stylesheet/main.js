@@ -4,7 +4,7 @@ grid.classList.add("sheet");
 
 var excelData = localStorage.getItem("data-key") || [];
 
-for (var j = 0; j < 27; i++){
+// for (var j = 0; j < 27; i++){
 	
 
 	for(var i = 0; i < 2700; i++){
@@ -14,7 +14,7 @@ for (var j = 0; j < 27; i++){
 		sheetInput.focus();
 		grid.appendChild(sheetInput);
 	}
-}
+// }
 excelSheet.appendChild(grid);
 
 // ===================================================================
@@ -51,9 +51,3 @@ document.addEventListener("blur", (e) => {
 })
 
 document.addEventListener("keyup", enterClick);
-
-function calc(){
-	if (sheetInput.value.includes("")){
-
-	}
-}
