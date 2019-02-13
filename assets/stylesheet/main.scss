@@ -17,12 +17,6 @@ input {
 	overflow: hidden;
 	background-color: transparent;
 }
-<<<<<<< HEAD
-// input {
-// 	outline: 2px solid dodgerblue;
-// }
-=======
->>>>>>> afb87c8300265c03fcde5566fcbe5c72d5940334
 
 a {
 	display: inline-block;
@@ -137,14 +131,11 @@ a {
 			color: white;
 		}
 	}
-
-
 }
 
 // accelsheet section
 .sheet {
 	display: grid;
-	overflow: auto;
 	align-items: center;
 	grid-template-columns: repeat(27, 1fr);
 }
