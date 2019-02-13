@@ -9,7 +9,8 @@ input {
   border: 0;
   outline: 0;
   overflow: hidden;
-  background-color: transparent; }
+  background-color: transparent;
+  box-sizing: border-box; }
 
 a {
   display: inline-block;
@@ -94,18 +95,41 @@ a {
       color: white; }
 
 .sheet {
+  margin: 13.5px 0 17px 0;
+  border: 2px solid rgba(0, 0, 0, 0.5);
   display: grid;
   align-items: center;
-  grid-template-columns: repeat(27, 1fr); }
+  grid-template-columns: repeat(27, 1fr);
+  margin-top: 100px; }
 
 .text-input {
   width: 120px;
-  font-size: 18px;
+  height: 25px;
+  font-size: 16px;
   display: inline-block;
-  border: 0.5px solid #b7b7b7; }
+  border: 0.5px solid #999; }
+
+.fileName {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0px 10px; }
+
+.fileName:hover {
+  border: 1px solid black; }
+
+.displayBorder {
+  border-left: 0.5px solid dodgerblue;
+  border-right: 2px solid dodgerblue;
+  border-top: 2px solid dodgerblue;
+  border-bottom: 2px solid dodgerblue; }
+
+.none {
+  border: none; }
 
 .text-input:hover {
   background: rgba(219, 219, 219, 0.733); }
+
+.editFileName {
+  border: 0.5px solid #999; }
 
 footer {
   position: fixed;
@@ -115,5 +139,17 @@ footer {
   background: white;
   padding: 10px;
   box-shadow: 0px -6px 6px 0px #cfcfcf; }
+  footer .footer-icons {
+    padding: 4px;
+    transition-duration: .6s;
+    border-radius: 5px; }
+    footer .footer-icons i {
+      font-size: 20px;
+      color: #85888b;
+      margin-right: 15px; }
+  footer .footer-text {
+    font-size: 15px;
+    color: #575757;
+    font-family: 'Noto Sans JP', sans-serif; }
 
 /*# sourceMappingURL=main.css.map */
