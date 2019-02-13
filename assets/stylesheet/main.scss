@@ -1,0 +1,76 @@
+@import url("base.css");
+// border box
+
+*,*:before, *:after {
+	box-sizing: border-box;
+}
+
+// ===============================
+// general css
+// ===============================
+button, input {
+	border: 0;
+	outline: 0;
+	overflow: hidden;
+	background-color: transparent;
+}
+a {
+	display: inline-block;
+	color: #333;
+	text-decoration: none;
+}
+
+::-webkit-input-placeholder{
+	color: rgba(0,0,0,0.8);
+}
+// ===============================
+
+.primary-header {
+	display: flex;
+ 	align-items: center;
+ 	justify-content: space-between;
+	
+	.logo-sec, .doc-name, .nav-list, .nav-bar, .user-profile {
+		display: flex;
+	}
+	.logo {
+		margin: 5px 20px 0 0;
+	}
+	
+	.nav-list {
+		justify-content: space-between;
+		padding: 10px 0;
+		margin: 0;
+	}
+	.file-menu {
+		padding-right: 20px;
+		text-transform: capitalize;
+		font-size: 18px;
+	}
+
+	.logo {
+		font-size: 40px;
+		color: darkgreen;
+	}
+
+	.share-btn {
+		font-size: 18px;
+		color: #fff;
+		border-radius: 2px;
+		background-color: darkgreen;
+		padding: 10px 20px;
+		margin: 0 20px;
+	}
+
+	.fa-comment-alt{
+		font-size: 30px
+	}
+
+	.fa-user-circle {
+		font-size: 40px
+	}
+
+	.user-profile {
+		align-items: center;
+	}
+}
