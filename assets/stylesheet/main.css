@@ -96,7 +96,8 @@ a {
 .sheet {
   display: grid;
   align-items: center;
-  grid-template-columns: repeat(27, 1fr); }
+  grid-template-columns: repeat(27, 1fr);
+  margin-top: 100px; }
 
 .text-input {
   width: 120px;
