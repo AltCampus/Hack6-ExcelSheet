@@ -14,6 +14,10 @@ button, input {
 	overflow: hidden;
 	background-color: transparent;
 }
+// input {
+// 	outline: 2px solid dodgerblue;
+// }
+
 a {
 	display: inline-block;
 	color: #333;
@@ -78,6 +82,7 @@ a {
 // accelsheet section
 .sheet{
 	display: grid;
+	overflow: auto;
 	align-items: center;
 	grid-template-columns: repeat(27, 1fr);
 }
