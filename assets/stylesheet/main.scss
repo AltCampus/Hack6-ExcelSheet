@@ -16,6 +16,7 @@ input {
 	outline: 0;
 	overflow: hidden;
 	background-color: transparent;
+	box-sizing: border-box;
 }
 
 a {
@@ -31,6 +32,7 @@ a {
 // ===============================
 
 .primary-header {
+	// margin-top: 10px;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -135,6 +137,8 @@ a {
 
 // accelsheet section
 .sheet {
+	margin: 13.5px 0 17px 0; 
+	border: 2px solid rgba(0,0,0,0.5);
 	display: grid;
 	align-items: center;
 	grid-template-columns: repeat(27, 1fr);
@@ -143,13 +147,39 @@ a {
 
 .text-input {
 	width: 120px;
-	font-size: 18px;
+	height: 25px;
+	font-size: 16px;
 	display: inline-block;
-	border: 0.5px solid #b7b7b7;
+	border: 0.5px solid #999;
+}
+
+
+// file name editing
+.fileName {
+	border: 1px solid rgba(0,0,0,0.1);
+	padding: 0px 10px;
+}
+.fileName:hover {
+	border: 1px solid rgba(0,0,0,1);
+
+}
+.displayBorder {
+	border-left: 0.5px solid dodgerblue;
+	border-right: 2px solid dodgerblue;
+	border-top: 2px solid dodgerblue;
+	border-bottom: 2px solid dodgerblue;
+}
+.none {
+	border: none;
 }
 
 .text-input:hover {
 	background: rgba(219, 219, 219, 0.733);
+}
+
+.editFileName {
+	// font-size: 18px;
+	border: 0.5px solid #999;
 }
 
 footer {
@@ -179,3 +209,4 @@ footer {
 		font-family: 'Noto Sans JP', sans-serif;
 	}
 }
+
