@@ -74,13 +74,38 @@ a {
 		align-items: center;
 	}
 }
-// .container {
-// 	display: grid;
-// 	grid-template-columns: repeat(27, 100px);
-// 	grid-template-rows: repeat(100, 25px);
-// 	border: 1px solid red;
 
-// }
+
+
+
+// accelsheet section
+.sheet{
+	display: grid;
+	align-items: center;
+	grid-template-columns: repeat(27, 1fr);
+}
+
+.text-input {
+	width: 120px;
+	font-size: 18px;
+	display: inline-block;
+	border: 0.5px solid #999;
+}
+
+
+// file name editing
+.fileName {
+	border: 1px solid rgba(0,0,0,0.1);
+	padding: 0px 10px;
+}
+.fileName:hover {
+	border: 1px solid rgba(0,0,0,1);
+
+}
+.displayBorder {
+	border: 2px solid dodgerblue;
+}
+
 
 
 

@@ -1,17 +1,39 @@
-// grid creation 
-// var gridParent = document.querySelector('.container');
-// var ul = document.createElement('ul');
 
-// var col = '';
+var excelSheet = document.querySelector(".main-sheet");
+var grid = document.createElement("section");
+grid.classList.add("sheet");
 
-// ul.innerHTML = col;
-// gridParent.innerHTML = ul;
-// function grid() {
-// for (i=0; i < 27; i++){
-// 	col += `<li calss="list" data-id=${i}>i</li>`;
-// 	for (j=0; j < 100; j++){
-// 		col += `li calss="list" data-id=${i+j}>j</li>`
-// 	}
-// }
-// }
-// gridParent.innerHTML = col;
+for(var i = 0; i < 2700; i++){
+	var sheetInput = document.createElement("input");
+	sheetInput.classList.add("text-input");
+	sheetInput.setAttribute('data-key',i);
+	grid.appendChild(sheetInput);
+}
+
+
+excelSheet.appendChild(grid);
+
+
+// name editing and storing
+var fileName = document.querySelector('.fileName');
+
+function editFileName(e){
+	console.dir(e.target);
+	var edit = e.target.dataset.id;
+	var parent = e.target.parentElement;
+	var input = document.createElement('input');
+	input.type = 'text';
+	input.value = e.target.textContent;
+	parent.replaceChild(input, e.target);
+	input.focus();
+	input.addEventListener('blur', ()=> {
+		e.target.innerText = input.value;
+	})
+}
+
+// focusing the element which is clicked.
+var inputContainer = document.querySelector('.sheet');
+console.dir(inputContainer);
+inputContainer
+// file name editing and storing.
+fileName.addEventListener('dblclick', editFileName);
